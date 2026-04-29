@@ -1,0 +1,9 @@
+Component,Config,Val Sent F1,Notes,Val PPL
+Encoder,"d_model=64, heads=2, layers=2, lr=1e-3",baseline,Underfitting — too small,
+Encoder,"d_model=128, heads=4, layers=3, lr=3e-4",best,"Good balance, used in final model",
+Encoder,"d_model=256, heads=8, layers=4, lr=3e-4",slight overfit,"Slower, marginal improvement",
+Decoder,"d_model=64, heads=2, layers=2, lr=5e-4",,Higher perplexity,baseline
+Decoder,"d_model=128, heads=4, layers=3, lr=3e-4",,"Best performance, final choice",best
+Retrieval,k=1,-,Less diverse context,
+Retrieval,k=3,-,"Good balance, final choice",
+Retrieval,k=10,-,"Input too long, diminishing returns",
