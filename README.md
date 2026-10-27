@@ -1,6 +1,4 @@
-# CS-4063 NLP Assignment 3
-
-Transformer-based review understanding with a retrieval-augmented explanation generator.
+# Transformer-based review understanding with a retrieval-augmented explanation generator.
 
 ## Project Summary
 
